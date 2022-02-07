@@ -14,11 +14,11 @@ export const initDb = async (connection: nano.ServerScope) => {
    const tmpAuthorConnection: nano.DocumentScope<AuthorToPost> = connection.db.use("authors");
 
    const authorsArr = JSON.parse(
-      fs.readFileSync(path.resolve(__dirname, "../seeds/authors.json")).toString()
+      fs.readFileSync(path.resolve(__dirname, "../", "../seeds/authors.json")).toString()
    ).authors;
 
    const booksArr = JSON.parse(
-      fs.readFileSync(path.resolve(__dirname, "../seeds/books.json")).toString()
+      fs.readFileSync(path.resolve(__dirname, "../", "../seeds/books.json")).toString()
    ).books;
 
    booksArr.forEach(async (item: Book, idx: number) => {
