@@ -13,13 +13,13 @@
 by https:
 
 ```
-https://github.com/ajiways/testgraphqlapi.git
+git clone https://github.com/ajiways/testgraphqlapi.git
 ```
 
 or ssh:
 
 ```
-git@github.com:ajiways/testgraphqlapi.git
+git clone git@github.com:ajiways/testgraphqlapi.git
 ```
 
 ### Then you have to run db:
